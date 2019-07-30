@@ -1,8 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
 
-import Button from '@material-ui/core/Button';
-
 import Contact from './Contact'
 import Home from './Home'
 import AboutMe from './AboutMe';
@@ -18,16 +16,16 @@ const App = () => (
   <div>
     <ul>
       <li>
-        <CustomLink/>
+        <CustomLink to={'/home'}>Home</CustomLink>
       </li>
       <li>
-        <Link to={'/contact'}>contact</Link>
+        <CustomLink to={'/contact'}>contact</CustomLink>
       </li>
       <li>
-        <Link to={'/about-me'}>about-me</Link>
+        <CustomLink to={'//about-me'}>about-me</CustomLink>
       </li>
       <li>
-        <Link to={'/projects'}>projects</Link>
+       <CustomLink to={'/projects'}>projects</CustomLink>
       </li>
     </ul>
   </div>
