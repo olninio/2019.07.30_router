@@ -7,11 +7,16 @@ const Contact = (props) => (
   <div>
     <TextField
         label="Message"
+        fullWidth = {true}
     />
+    <br/>
+    <br/>
     <Button
       variant = {'contained'}
       color = {'secondary'}
-      size = {'small'}>
+      size = {'small'}
+      fullWidth = {true}
+      >
       Contact Us
     </Button>
   </div>
