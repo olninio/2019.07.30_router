@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
 
 import Contact from './Contact'
 import Home from './Home'
@@ -9,6 +9,22 @@ import Projects from './Projects';
 
 const App = () => (
   <Router>
+  <div>
+    <ul>
+      <li>
+        <Link to={'/home'}>home</Link>
+      </li>
+      <li>
+        <Link to={'/contact'}>contact</Link>
+      </li>
+      <li>
+        <Link to={'/about-me'}>about-me</Link>
+      </li>
+      <li>
+        <Link to={'/projects'}>projects</Link>
+      </li>
+    </ul>
+  </div>
   
   <div>
     <Route path = {'/'} component = {Home} exact />
