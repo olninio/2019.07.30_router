@@ -27,7 +27,7 @@ class Contact extends React.Component {
           color = {'secondary'}
           size = {'small'}
           fullWidth = {true}
-          onClick = {(event) => alert('click')} 
+          onClick = {(event) => alert(this.state.message)} 
           >
           Contact Us
         </Button>
