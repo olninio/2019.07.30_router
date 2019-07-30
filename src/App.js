@@ -22,7 +22,7 @@ const App = () => (
         <CustomLink to={'/contact'}>contact</CustomLink>
       </li>
       <li>
-        <CustomLink to={'//about-me'}>about-me</CustomLink>
+        <CustomLink to={'/about-me'}>about-me</CustomLink>
       </li>
       <li>
        <CustomLink to={'/projects'}>projects</CustomLink>
