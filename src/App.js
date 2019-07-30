@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
 
+import Button from '@material-ui/core/Button';
+
 import Contact from './Contact'
 import Home from './Home'
 import AboutMe from './AboutMe';
@@ -13,7 +15,10 @@ const App = () => (
   <div>
     <ul>
       <li>
-        <Link to={'/home'}>home</Link>
+        <Link to={'/home'}>
+          <Button variant={"contained"} color={"primary"}>
+          Home</Button>
+        </Link>
       </li>
       <li>
         <Link to={'/contact'}>contact</Link>
