@@ -8,12 +8,9 @@ import Home from './Home'
 import AboutMe from './AboutMe';
 import Projects from './Projects';
 import Project from './Project';
+import CustomLink from './CustomLink'
 
-const CustomLink = () => (
-  <Link to={'/home'} style= {{textDecoration: 'none'}}>
-    <Button variant={"contained"} color={"primary"}>Home</Button>
-  </Link>
-)
+
 
 
 const App = () => (
