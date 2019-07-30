@@ -7,7 +7,13 @@ import Contact from './Contact'
 import Home from './Home'
 import AboutMe from './AboutMe';
 import Projects from './Projects';
-import Project from './Project'
+import Project from './Project';
+
+const CustomLink = () => (
+  <Link to={'/home'} style= {{textDecoration: 'none'}}>
+    <Button variant={"contained"} color={"primary"}>Home</Button>
+  </Link>
+)
 
 
 const App = () => (
@@ -15,10 +21,7 @@ const App = () => (
   <div>
     <ul>
       <li>
-        <Link to={'/home'} style= {{textDecoration: 'none'}}>
-          <Button variant={"contained"} color={"primary"}>
-          Home</Button>
-        </Link>
+        <CustomLink/>
       </li>
       <li>
         <Link to={'/contact'}>contact</Link>
