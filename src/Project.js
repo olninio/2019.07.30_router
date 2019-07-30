@@ -2,7 +2,7 @@ import React from 'react';
 
 const Project = (props) => (
   <div>
-    {props.match.params.projectName}
+    {props.match.params.name}
   </div>
   
 )
