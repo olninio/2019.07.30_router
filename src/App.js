@@ -15,7 +15,7 @@ const App = () => (
   <div>
     <ul>
       <li>
-        <Link to={'/home'}>
+        <Link to={'/home'} style= {{textDecoration: 'none'}}>
           <Button variant={"contained"} color={"primary"}>
           Home</Button>
         </Link>
