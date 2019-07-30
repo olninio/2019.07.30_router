@@ -5,6 +5,7 @@ import Contact from './Contact'
 import Home from './Home'
 import AboutMe from './AboutMe';
 import Projects from './Projects';
+import Project from './Project'
 
 
 const App = () => (
@@ -32,6 +33,7 @@ const App = () => (
     <Route path = {"/contact"} component = {Contact} />
     <Route path = {'/about-me'} component = {AboutMe} />
     <Route path = {'/projects'} component = {Projects} />
+    <Route path = {'/projects/:projectName'} component = {Project} />
   </div>
   
   </Router>
